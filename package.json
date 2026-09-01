@@ -1,0 +1,27 @@
+{
+    "name": "capstone-project",
+    "version": "1.0.0",
+    "description": "This repository contains my capstone project developed as part of my AI-assisted development workflow.",
+    "main": "script.js",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rabbani9826/capstone-project.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rabbani9826/capstone-project/issues"
+    },
+    "homepage": "https://github.com/rabbani9826/capstone-project#readme",
+    "dependencies": {
+        "next": "^16.3.4",
+        "react": "^19.2.8",
+        "react-dom": "^19.2.8"
+    }
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Manage your profile and application preferences.">
+    <title>Account settings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="page-shell">
+        <header class="page-header">
+            <p class="eyebrow">Account</p>
+            <h1>Settings</h1>
+            <p class="intro">Keep your profile current and shape the way this app works for you.</p>
+        </header>
+
+        <form class="settings-form" id="settings-form" novalidate aria-describedby="form-status">
+            <section class="form-section" aria-labelledby="profile-heading">
+                <div class="section-heading">
+                    <p class="section-number">01</p>
+                    <div>
+                        <h2 id="profile-heading">Profile</h2>
+                        <p>Your identity and account access details.</p>
+                    </div>
+                </div>
+
+                <div class="field-grid">
+                    <div class="field">
+                        <label for="name">Full name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="name-error" aria-invalid="false" aria-errormessage="name-error">
+                        <p class="field-error" id="name-error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required aria-required="true" aria-describedby="email-error" aria-invalid="false" aria-errormessage="email-error">
+                        <p class="field-error" id="email-error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field field-wide">
+                        <label for="password">New password</label>
+                        <input id="password" name="password" type="password" autocomplete="new-password" required aria-required="true" minlength="8" aria-describedby="password-hint password-error" aria-invalid="false" aria-errormessage="password-error">
+                        <p class="field-hint" id="password-hint">Use at least 8 characters. Your password is never saved in this browser.</p>
+                        <p class="field-error" id="password-error" aria-live="polite"></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section" aria-labelledby="preferences-heading">
+                <div class="section-heading">
+                    <p class="section-number">02</p>
+                    <div>
+                        <h2 id="preferences-heading">Preferences</h2>
+                        <p>Personalize your everyday experience.</p>
+                    </div>
+                </div>
+
+                <div class="field-grid">
+                    <div class="field">
+                        <label for="theme">Appearance</label>
+                        <select id="theme" name="theme">
+							<option value="system">Use device setting</option>
+							<option value="light">Light</option>
+							<option value="dark">Dark</option>
+						</select>
+                    </div>
+
+                    <div class="field">
+                        <label for="language">Language</label>
+                        <select id="language" name="language" aria-label="Language preference">
+							<option value="en">English</option>
+							<option value="es">Spanish</option>
+							<option value="fr">French</option>
+						</select>
+                    </div>
+
+                    <label class="check-field field-wide" for="notifications" aria-describedby="notifications-help">
+						<input id="notifications" name="notifications" type="checkbox" aria-label="Receive product updates">
+						<span id="notifications-help">
+							<strong>Product updates</strong>
+							<small>Receive occasional email about new features and improvements.</small>
+						</span>
+					</label>
+                </div>
+            </section>
+
+            <div class="form-actions">
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                <button type="submit">Save settings <span aria-hidden="true">&rarr;</span></button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
