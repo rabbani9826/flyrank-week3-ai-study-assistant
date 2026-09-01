@@ -1,67 +1,75 @@
-# Capstone Project
+# AI Study Assistant
+
+An AI-powered study assistant web application built as part of the FlyRank AI Internship.
 
 ## Overview
 
-This repository contains my capstone project developed as part of my AI-assisted development track.
+AI Study Assistant is a simple study dashboard designed to help students organize their learning and track their study progress.
 
-## Goals
+The application provides a clean interface with separate pages for the home screen, study dashboard, and application health status.
 
-- Build a practical software project.
-- Use AI-assisted development tools effectively.
-- Follow clean coding and Git practices.
-- Maintain a clear and organized project structure.
+## Features
+
+- 🏠 Home page with study-focused content
+- 📊 Study dashboard
+- 📈 Study progress overview
+- 🧠 AI Study Assistant interface
+- ❤️ Health check page
+- 🧭 Navigation between application pages
+- 📱 Clean and responsive UI
+- ⚡ Built with Next.js
+
+## Pages
+
+### Home
+Provides an introduction to the AI Study Assistant and links to the main study features.
+
+### Dashboard
+Displays study-related information including:
+
+- Questions Solved
+- Study Sessions
+- Progress
+- AI Assistant status
+- Study progress section
+
+### Health Check
+Provides the current application status and confirms that the application is running successfully.
 
 ## Tech Stack
 
+- Next.js
+- React
+- JavaScript
 - HTML
 - CSS
-- JavaScript
 - Node.js
-- Git
-- GitHub
+- Git & GitHub
 
-## Getting Started
+## Project Structure
 
-1. Clone this repository to your local machine.
-2. Open the project in VS Code.
-3. Launch the app using a local web server or by opening the main HTML file in a browser.
-4. If you are making changes, keep the code organized and follow the repository’s development practices.
-
-## Project Status
-
-Settings form implemented with Round 2 accessibility and validation improvements.
-
-## Settings Form
-
-The browser-only settings form includes profile fields for full name, email, and password, plus appearance, language, and product update preferences.
-
-### Round 2 improvements
-
-- Added clear labels and accessibility attributes to the form controls.
-- Associated validation messages with the relevant fields using `aria-invalid`, `aria-errormessage`, and `aria-live` updates.
-- Kept keyboard navigation intact and preserved strong visible focus states.
-- Tightened validation to reject blank or whitespace-only names, invalid email addresses, and passwords shorter than 8 characters.
-- Preserved the successful save flow and restored saved preferences, including the product update checkbox, on refresh.
-
-### Validation behavior
-
-- Full name is required and cannot be empty or whitespace-only.
-- Email must be a valid email address pattern.
-- Password must be at least 8 characters long.
-- Required fields show clear in-context error messages when the form is submitted.
-- The first invalid field receives focus so the user can correct it quickly.
-
-### Saved settings and persistence
-
-- Non-sensitive settings are saved in `localStorage` and restored when the page is reopened.
-- Passwords are cleared after saving and are never persisted.
-
-Open `index.html` directly or use a local web server to run the app.
-
-## Development
-
-This project is developed using VS Code and AI-assisted development tools.
-
-## Author
-
-Shaik Rabbani
+```text
+capstone-project/
+│
+├── app/
+│   ├── components/
+│   │   └── Navbar.js
+│   │
+│   ├── dashboard/
+│   │   └── page.js
+│   │
+│   ├── health/
+│   │   └── page.js
+│   │
+│   ├── layout.js
+│   └── page.js
+│
+├── public/
+├── .gitignore
+├── CLAUDE.md
+├── LICENSE
+├── package.json
+├── package-lock.json
+├── README.md
+├── style.css
+└── WORKFLOW.md
